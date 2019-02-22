@@ -1,4 +1,4 @@
-/***************************************************************************//**
+﻿/***************************************************************************//**
     \file          uds-net.c
     \author        
     \mail         
@@ -579,7 +579,7 @@ network_main (void)
         N_USData.confirm (N_TIMEOUT_Bs);
     }
 
-	if (nt_timer_run (TIMER_STmin) < 0)
+	if (nt_timer_run (TIMER_STmin) < 0)		//-通过这个定时器控制连续帧的发送
 	{
         g_xcf_sn++;
 		if (g_xcf_sn > 0x0f)
